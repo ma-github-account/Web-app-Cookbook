@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+    {% if form.is_valid and search_text %}
+        Search Results for "{{ search_text }}"
+    {% else %}
+        Dish Search
+    {% endif %}
+{% endblock %}
+{% block content %}
+<h2>Search for Dishes</h2>
+<form>
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+{% if form.is_valid and search_text %}
+<h3>Search Results for <em>{{ search_text }}</em></h3>
+<ul class="list-group">
+    {% for dish in dishes %}
+    <li class="list-group-item">
+        <span class="text-info">Dish Name: </span> <a href="{% url 'dish_detail' dish.pk %}">{{ dish }}</a>
+        <br/>
+    </li>
+    {% empty %}
+        <li class="list-group-item">No results found.</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
