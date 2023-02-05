@@ -1,7 +1,7 @@
 
 This Django application is a Cookbook. Users are able to display the list of all dishes, display the dish details page, add a comment, rate the dish and display all comments. They are also able to use the search to find the dish more easily.
 
-Application is based on Bookr app explained by Ben Shaw, Saurabh Badhwar, Andrew Bird, Bharath Chandra K S, Chris Guest in their book Web Development with Django.
+Application is based on Bookr app explained by Ben Shaw, Saurabh Badhwar, Andrew Bird, Bharath Chandra and Chris Guest in their book Web Development with Django.
 
 Prerequisites:
 
