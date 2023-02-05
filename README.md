@@ -5,8 +5,8 @@ Application is based on Bookr app explained by Ben Shaw, Saurabh Badhwar, Andrew
 
 Prerequisites:
 
-Python 3.9.7
-Django 4.1.2
+- Python 3.9.7
+- Django 4.1.2
 
 How to run: python manage.py runserver
 
