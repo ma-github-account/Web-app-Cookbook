@@ -9,9 +9,9 @@ Prerequisites:
 - Django 4.1.2
 
 How to run:
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py runserver
 
 
 
